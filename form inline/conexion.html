@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://kit.fontawesome.com/a602b3a089.js" crossorigin="anonymous"></script>
+    <title>Document</title>
+  </head>
+  <body>
+    <form action="#" method="get">
+        <label for="Nom">Nom :</label>
+        <input type="text" id="Nom" />
+        <label for="Prénom">Prénom :</label>
+        <input type="text" id="Prénom" maxlength="30"/> <br>
+        <label for="Email">Email :</label>
+        <input type="text" id="Email" /> <br>
+        <label for="Télephone">Télephone :</label>
+        <input type="text" id="Télephone"/> <br>
+        <input type="radio" name="genre" id="mal"><label for="mal" id="mall">Masculin</label>
+        <input type="radio" name="genre" id="fam"><label for="fam" id="faml">Féminin</label>
+        <select name="groups" id="group">
+            <option value="0" >Votre group :</option>
+            <optgroup label="Dev WEB" style="background-color: rgba(129, 0, 0, 0.300);">
+            <option value="DW101">DW101</option>
+            <option value="DW102">DW102</option>
+            <option value="DW103">DW103</option>
+        </optgroup>
+        <optgroup label="Dev Mobile" style="background-color: rgba(79, 79, 132, 0.300);">
+            <option value="DM101">DM101</option>
+            <option value="DM102">DM102</option>
+        </optgroup>
+        </select>
+        <label >choisir les clubs</label>
+        <select name="clubs" id="cluds" multiple="multiple">
+            
+            <option value="Informatique">Informatique</option>
+            <option value="Robotique">Robotique</option>
+            <option value="Jeu d'échecs">Jeu d'échecs</option>
+            <option value="Musique">Musique</option>
+            <option value="Foot">Foot</option>
+            <option value="Théatre">Théatre</option>
+        </select>
+        <input type="submit" value="Submit" id="submit">
+    </form>
+    <div class="nom">
+        <i class="fa-solid fa-exclamation"></i>
+        <h1 id="aff"></h1>
+        <p>-Vous pouvez choisir jusqu'à trois clubs</p>
+        <p>-Le club ne peut pas être changé après la sélection</p>
+        <p>-Votre vrai nom doit être utilisé</p>
+        <p>-Toute information erronée peut entraîner le rejet de la candidature</p>
+    </div>
+    <div class="nom2" >
+      <i class="fa-solid fa-exclamation"></i>
+      <p id="messagnom"></p>
+      <p id="messagpre"></p>
+      <p id="messagmail"></p>
+      <p id="numiro"></p>
+      <p id="messaggenre"></p>
+      <p id="messaggrp"></p>
+      <p id="messagclub"></p>
+  </div>
+    <script src="config.js"></script>
+  </body>
+</html>
